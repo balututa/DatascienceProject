@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Balu0/Downloads/MLops/DatascienceProject/mlruns/0/4ea2719091af42958f095630a00d87ae/artifacts
+end_time: 1744903495936
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4ea2719091af42958f095630a00d87ae
+run_name: skittish-snail-396
+run_uuid: 4ea2719091af42958f095630a00d87ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744903480686
+status: 3
+tags: []
+user_id: Balu0

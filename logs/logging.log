@@ -669,3 +669,176 @@ x==========x]
 [2025-04-17 20:02:03,542: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
 
 x==========x]
+[2025-04-17 20:44:46,048: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2025-04-17 20:44:46,050: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-17 20:44:54,142: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:44:54] "GET / HTTP/1.1" 200 -]
+[2025-04-17 20:44:54,228: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:44:54] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -]
+[2025-04-17 20:44:54,700: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:44:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2025-04-17 20:45:20,343: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-17 20:45:20,353: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:45:20,360: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:45:20,367: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:45:20,370: INFO: common: created directory at: artifacts]
+[2025-04-17 20:45:20,371: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-17 20:45:20,372: INFO: data_ingestion: File already exists]
+[2025-04-17 20:45:20,388: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:45:20,389: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-04-17 20:45:20,396: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:45:20,400: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:45:20,410: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:45:20,413: INFO: common: created directory at: artifacts]
+[2025-04-17 20:45:20,414: INFO: common: created directory at: artifacts/data_validation]
+[2025-04-17 20:45:20,496: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:45:20,497: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-04-17 20:45:20,509: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:45:20,517: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:45:20,523: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:45:20,530: INFO: common: created directory at: artifacts]
+[2025-04-17 20:45:20,535: INFO: common: created directory at: artifacts/data_transformation]
+[2025-04-17 20:45:20,666: INFO: data_transformation: Splited data into training and test sets]
+[2025-04-17 20:45:20,667: INFO: data_transformation: (1199, 12)]
+[2025-04-17 20:45:20,668: INFO: data_transformation: (400, 12)]
+[2025-04-17 20:45:20,670: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:45:20,671: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-04-17 20:45:20,678: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:45:20,683: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:45:20,688: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:45:20,693: INFO: common: created directory at: artifacts]
+[2025-04-17 20:45:20,695: INFO: common: created directory at: artifacts/model_trainer]
+[2025-04-17 20:45:20,896: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:45:20,897: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-04-17 20:45:20,904: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:45:20,909: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:45:20,913: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:45:20,917: INFO: common: created directory at: artifacts]
+[2025-04-17 20:45:20,918: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-04-17 20:45:25,828: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2025-04-17 20:45:47,435: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:45:48,872: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:45:48] "GET /train HTTP/1.1" 200 -]
+[2025-04-17 20:46:16,762: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:46:16] "GET / HTTP/1.1" 200 -]
+[2025-04-17 20:46:16,827: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:46:16] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -]
+[2025-04-17 20:46:53,850: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:46:53] "POST /predict HTTP/1.1" 200 -]
+[2025-04-17 20:47:06,641: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:47:06] "POST /predict HTTP/1.1" 200 -]
+[2025-04-17 20:47:14,500: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:47:14] "GET / HTTP/1.1" 200 -]
+[2025-04-17 20:47:14,553: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:47:14] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -]
+[2025-04-17 20:47:37,142: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:47:37] "POST /predict HTTP/1.1" 200 -]
+[2025-04-17 20:54:09,817: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080]
+[2025-04-17 20:54:09,818: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2025-04-17 20:54:15,749: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:54:15] "GET / HTTP/1.1" 200 -]
+[2025-04-17 20:54:15,867: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:54:15] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -]
+[2025-04-17 20:54:35,598: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-04-17 20:54:35,609: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:54:35,618: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:54:35,624: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:54:35,628: INFO: common: created directory at: artifacts]
+[2025-04-17 20:54:35,630: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-04-17 20:54:35,632: INFO: data_ingestion: File already exists]
+[2025-04-17 20:54:35,663: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:54:35,665: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2025-04-17 20:54:35,676: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:54:35,694: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:54:35,701: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:54:35,706: INFO: common: created directory at: artifacts]
+[2025-04-17 20:54:35,711: INFO: common: created directory at: artifacts/data_validation]
+[2025-04-17 20:54:35,833: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:54:35,834: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2025-04-17 20:54:35,845: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:54:35,849: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:54:35,856: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:54:35,861: INFO: common: created directory at: artifacts]
+[2025-04-17 20:54:35,863: INFO: common: created directory at: artifacts/data_transformation]
+[2025-04-17 20:54:35,985: INFO: data_transformation: Splited data into training and test sets]
+[2025-04-17 20:54:35,986: INFO: data_transformation: (1199, 12)]
+[2025-04-17 20:54:35,987: INFO: data_transformation: (400, 12)]
+[2025-04-17 20:54:35,992: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:54:35,993: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2025-04-17 20:54:36,001: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:54:36,008: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:54:36,015: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:54:36,018: INFO: common: created directory at: artifacts]
+[2025-04-17 20:54:36,020: INFO: common: created directory at: artifacts/model_trainer]
+[2025-04-17 20:54:36,287: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:54:36,288: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2025-04-17 20:54:36,298: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-04-17 20:54:36,301: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-04-17 20:54:36,309: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-04-17 20:54:36,313: INFO: common: created directory at: artifacts]
+[2025-04-17 20:54:36,315: INFO: common: created directory at: artifacts/model_evaluation]
+[2025-04-17 20:54:40,885: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2025-04-17 20:54:55,948: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2025-04-17 20:54:57,393: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:54:57] "GET /train HTTP/1.1" 200 -]
+[2025-04-17 20:55:17,759: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:55:17] "GET / HTTP/1.1" 200 -]
+[2025-04-17 20:55:17,836: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:55:17] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 -]
+[2025-04-17 20:55:40,842: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Balu0\Downloads\MLops\DatascienceProject\app.py", line 45, in index
+    return render_template('results.html', prediction = str(predict))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: results.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Balu0\Downloads\MLops\DatascienceProject\app.py", line 51, in index
+    traceback.print_exc()  # Print full error details
+    ^^^^^^^^^
+NameError: name 'traceback' is not defined. Did you forget to import 'traceback'
+[2025-04-17 20:55:41,109: INFO: _internal: 127.0.0.1 - - [17/Apr/2025 20:55:41] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
